@@ -10,7 +10,6 @@ img {
 	padding: 15px 0px;
 }
 
-
 p {
 	font-size: 20px;
 	line-height: 1.4;
@@ -36,16 +35,9 @@ h3 {
     margin-bottom: 10px;
 }
 
-#logo {
-    width: 200px; 
-    height:auto;
-    transition: opacity 0.8s ease;
-
-}
-
 #animation {
-            width: 100%;
-            height: auto;
+     width: 100%;
+     height: auto;
 }
 
 a {
@@ -68,4 +60,43 @@ a {
 #spacer{
     height: 5vh;
     color: white
+}
+
+.container {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center; 
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: entry 70% entry 100%; 
+  width: 100%;
+	max-width: 640px;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+.container img {
+  width: 100px;      
+  flex-shrink: 0;    
+  object-fit: cover; 
+  transition: opacity 0.8s ease;
+}
+
+.container .text {
+  flex: 1;          
+}
+
+#image {
+    width: 100%;
+	max-width: 1000px;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+#image2 {
+    width: 100%;
+	max-width: 900px;
+    margin-left: auto;
+	margin-right: auto;
 }
